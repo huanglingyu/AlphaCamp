@@ -1,0 +1,126 @@
+/* 基本的設定 */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px;
+}
+h1{
+    font-size:5rem;
+}
+h2{
+    font-size:3rem;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a, a:hover, a:focus {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.container {
+  width: 85%;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* navbar的設定 */
+nav{
+    float:left;
+    top: 30%;
+    left: 0;
+    background-color:gray;
+    z-index: 100;
+    padding:0.5rem;
+
+}
+
+#logo img{
+    width:40px;
+}
+
+.navbar li{
+    display:block;
+    margin:2rem 0 2rem 0;
+}
+.navbar li a{
+    color:orange;
+    text-align: center;
+    display:block;
+}
+
+/* homepage background image設定 */
+header{
+    background-image:url(image/firstImage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+}
+.overlay{
+  background-color:rgba(0,0,0,0.5);
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  z-index:-1;
+}
+/* homepage 文字 */
+.container_table{
+  display:table;
+  width:100%;
+  height:100%;
+  position: relative;
+  z-index: 1;
+}
+.container_table_cell{
+  display:table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.container_table_cell h2{
+  color:white;
+}
+.container_table_cell p{
+  color:white;
+  font-size:1rem;
+}
+.container_table_cell .social_icons a{
+  color:white;
+  display:inline-block;
+  margin:0.5rem;
+  font-size:1.3rem;
+}
+.container_table_cell .social_icons a:hover{
+  color:gray;
+}
